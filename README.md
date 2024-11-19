@@ -1,4 +1,4 @@
-# 🇨🇳 The Taiwan Strait Conflict Simulator  
+🇨🇳 The Taiwan Strait Conflict Simulator  
 
 ![Taiwan Strait Banner](https://i.imgur.com/N9yyHEh.png "Explore the Simulator")
 
