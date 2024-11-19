@@ -1,10 +1,26 @@
-🇨🇳 The Taiwan Strait Conflict Simulator
+# 🇨🇳 The Taiwan Strait Conflict Simulator  
 
-Will Xi Jinping Start a War?
+![Taiwan Strait Banner]([./images/banner](https://imgur.com/gallery/will-xi-jinping-take-military-action-against-taiwan-NfHuw3t.png "Explore the Simulator")  
 
-One of the most urgent and complex geopolitical questions today is:
+## *Will Xi Jinping Start a War?*  
+One of the most urgent and complex geopolitical questions today is:  
 
-“When will Xi Jinping make a move on Taiwan?”
+*"When will Xi Jinping make a move on Taiwan?"*  
+
+### *💡 About the Simulator*  
+![Simulator Screenshot](./images/simulator-screenshot.png "Interactive Simulation Tool")  
+
+The *Taiwan Strait Conflict Simulator* is an interactive tool designed to explore the factors influencing Xi Jinping's decision-making.  
+
+---
+
+### *📊 How the Simulator Works*  
+![How It Works Icon](./images/how-it-works.png)  
+Adjust factors like *US-China Power Balance* and *Nationalism Pressure* to simulate various scenarios.  
+
+### *🔍 Why This Matters*  
+![Taiwan Map](./images/taiwan-map.png)  
+This isn’t just about predictions—it’s about understanding the future of Taiwan and global security.
 
 💡 About the Simulator
 
