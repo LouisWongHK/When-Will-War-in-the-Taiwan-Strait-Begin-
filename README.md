@@ -24,6 +24,57 @@ With this simulator, you can:
 
 Whether you are a researcher, a geopolitical enthusiast, or a strategy game lover, this simulator offers a unique experience for understanding one of the world’s most pressing conflict zones.
 
+### *📊 How the Simulator Works*  
+
+Adjust factors like *US-China Power Balance* and *Nationalism Pressure* to simulate various scenarios.  
+
+### *🔍 Why This Matters*  
+
+This isn’t just about predictions—it’s about understanding the future of Taiwan and global security.
+
+💡 About the Simulator
+
+The Taiwan Strait Conflict Simulator is an interactive tool designed to explore the factors that might influence Xi Jinping’s decision-making process regarding Taiwan.
+
+By combining data-driven insights and customizable indicators, this simulator offers a dynamic way to understand how variables like regime stability, nationalism, and power balance could shape the future of the Taiwan Strait.
+
+📊 How the Simulator Works
+
+	•	Realistic Indicators: Adjust key factors like US-China power balance, nationalism pressure, and regime stability.
+	•	Weighted Scoring: Each factor is influenced by historical and current trends, with a final score representing the likelihood of conflict.
+	•	Critical Threshold: A score above 7 means war is “likely.”
+
+🕒 Default Scenario:
+The simulator uses 2024 as the starting point but allows you to model potential shifts in policies and events up to 2035.
+
+🔍 Why This Matters
+
+This project isn’t just about predictions—it’s about starting conversations on:
+	•	The delicate balance of power in the Taiwan Strait.
+	•	How data and technology can enhance geopolitical analysis.
+	•	What these scenarios mean for global security and the future of Taiwan.
+
+🎯 Why I Built This
+
+This simulator combines my passions for:
+	•	Geopolitics: Understanding the subtle forces driving world events.
+	•	Web Development: Building tools that are both interactive and insightful.
+	•	Scenario Planning: Using creative methods to model and discuss possible futures.
+
+It’s a work in progress, but this project is a personal milestone for me, blending technical skills with a deep interest in shaping meaningful conversations.
+
+💬 Let’s Discuss the Future
+
+Are you interested in:
+	•	Geopolitical modeling?
+	•	The intersection of technology and international affairs?
+	•	Taiwan’s future in an ever-changing world?
+
+👉 Try the simulator and share your thoughts!
+Together, we can refine tools like this to better understand the challenges of our time—and maybe even uncover solutions.
+
+🌟 Check it out now and join the conversation!
+
 Key Features
 
 1️⃣ Real-Time Interactive Experience
@@ -94,59 +145,6 @@ We welcome community contributions! Here’s how you can get involved:
 Report bugs or suggest new features using the GitHub Issues tab.
 	2.	Create Pull Requests:
 Fork this repository, make your changes, and submit a pull request.
-
----
-
-### *📊 How the Simulator Works*  
-
-Adjust factors like *US-China Power Balance* and *Nationalism Pressure* to simulate various scenarios.  
-
-### *🔍 Why This Matters*  
-
-This isn’t just about predictions—it’s about understanding the future of Taiwan and global security.
-
-💡 About the Simulator
-
-The Taiwan Strait Conflict Simulator is an interactive tool designed to explore the factors that might influence Xi Jinping’s decision-making process regarding Taiwan.
-
-By combining data-driven insights and customizable indicators, this simulator offers a dynamic way to understand how variables like regime stability, nationalism, and power balance could shape the future of the Taiwan Strait.
-
-📊 How the Simulator Works
-
-	•	Realistic Indicators: Adjust key factors like US-China power balance, nationalism pressure, and regime stability.
-	•	Weighted Scoring: Each factor is influenced by historical and current trends, with a final score representing the likelihood of conflict.
-	•	Critical Threshold: A score above 7 means war is “likely.”
-
-🕒 Default Scenario:
-The simulator uses 2024 as the starting point but allows you to model potential shifts in policies and events up to 2035.
-
-🔍 Why This Matters
-
-This project isn’t just about predictions—it’s about starting conversations on:
-	•	The delicate balance of power in the Taiwan Strait.
-	•	How data and technology can enhance geopolitical analysis.
-	•	What these scenarios mean for global security and the future of Taiwan.
-
-🎯 Why I Built This
-
-This simulator combines my passions for:
-	•	Geopolitics: Understanding the subtle forces driving world events.
-	•	Web Development: Building tools that are both interactive and insightful.
-	•	Scenario Planning: Using creative methods to model and discuss possible futures.
-
-It’s a work in progress, but this project is a personal milestone for me, blending technical skills with a deep interest in shaping meaningful conversations.
-
-💬 Let’s Discuss the Future
-
-Are you interested in:
-	•	Geopolitical modeling?
-	•	The intersection of technology and international affairs?
-	•	Taiwan’s future in an ever-changing world?
-
-👉 Try the simulator and share your thoughts!
-Together, we can refine tools like this to better understand the challenges of our time—and maybe even uncover solutions.
-
-🌟 Check it out now and join the conversation!
 
 -----
 
