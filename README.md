@@ -1,6 +1,6 @@
 # 🇨🇳 The Taiwan Strait Conflict Simulator  
 
-![Taiwan Strait Banner](https://imgur.com/gallery/will-xi-jinping-take-military-action-against-taiwan-NfHuw3t "Explore the Simulator")
+![Taiwan Strait Banner](https://i.imgur.com/N9yyHEh.png "Explore the Simulator")
 
 ## *Will Xi Jinping Start a War?*  
 One of the most urgent and complex geopolitical questions today is:  
