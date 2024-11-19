@@ -157,7 +157,6 @@ This project is open-source under the MIT License. Feel free to use, modify, and
 Contact Us
 
 Got questions or feedback? Reach out to us:
-	•	Email: your-email@example.com
-	•	GitHub: Your GitHub Profile
+	•	Email: LouisWongHK@protonmail.com
 
 🔗 Start Simulating Now! The future is in your hands.
