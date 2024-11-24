@@ -18,7 +18,7 @@ const fs = require('fs');
 const path = require('path');
 
 const hostname = '0.0.0.0';
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 3000;
 
 const server = http.createServer((req, res) => {
     // Resolve the file path to the index.html file
