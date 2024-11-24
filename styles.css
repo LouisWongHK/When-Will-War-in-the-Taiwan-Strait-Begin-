@@ -1,0 +1,217 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px;
+}
+
+/* Title styles */
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffcb05;
+    margin-bottom: 20px;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 段落樣式 */
+p {
+    color: #555555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* 表格樣式 */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 0.95em;
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* 清單樣式 */
+ol, ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #555555;
+}
+
+ul li::marker {
+    color: #007acc;
+}
+
+/* 加強重點文字 */
+strong {
+    color: #007acc;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slider-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #bbbbbb;
+    margin-bottom: 5px;
+}
+
+input[type="range"] {
+    width: 100%;                /* Sets the width of the range input to 100% of its parent container */
+    -webkit-appearance: none;   /* Removes the default appearance for WebKit browsers (like Chrome, Safari) */
+    height: 8px;                /* Sets the height of the range input */
+    background: #333;           /* Sets the background color of the range input to a dark grey */
+    border-radius: 5px;         /* Rounds the corners of the range input */
+    outline: none;              /* Removes the default outline that appears when the range input is focused */
+    transition: background 0.3s; /* Adds a transition effect to the background property over 0.3 seconds */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #6200ea;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="range"]:hover {
+    background: #555;
+}
+
+/* Button styles */
+button {
+    padding: 12px 25px;
+    margin-top: 10px;
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #3700b3;
+    transform: translateY(-2px);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffcb05;
+}
+
+/* Explanation text */
+.explanation {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbbbbb;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* 行內連結或按鈕樣式（如果有） */
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 表格樣式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #e0e0e0;
+    background-color: #1e1e1e;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* 表頭樣式 */
+th {
+    background-color: #6200ea;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #3700b3;
+}
+
+/* 表格內容樣式 */
+td {
+    padding: 12px;
+    border-bottom: 1px solid #333333;
+}
+
+/* 偶數行的背景顏色 */
+tr:nth-child(even) {
+    background-color: #292929;
+}
+
+/* 滑鼠懸停行的效果 */
+tr:hover {
+    background-color: #373737;
+    transition: background-color 0.2s ease-in-out;
+}
