@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xi Jinping Taiwan Conflict Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Will Xi Jinping Take Military Action Against Taiwan?</h1>
+  <p>(Default value is set based on the 2024 geopolitical context)</p>
+    <div class="container">
+        <div class="slider-group">
+            <label>US-China Power Balance:</label>
+            <input type="range" id="usChinaPowerBalance" min="1" max="10" value="5">
+            <span id="usChinaPowerBalanceValue">5</span>
+        </div>
+        <div class="slider-group">
+            <label>Regime Stability:</label>
+            <input type="range" id="regimeStability" min="1" max="10" value="5">
+            <span id="regimeStabilityValue">5</span>
+        </div>
+        <div class="slider-group">
+            <label>Nationalism Pressure:</label>
+            <input type="range" id="nationalismPressure" min="1" max="10" value="6">
+            <span id="nationalismPressureValue">6</span>
+        </div>
+        <div class="slider-group">
+            <label>Information Distortion:</label>
+            <input type="range" id="informationDistortion" min="1" max="10" value="4">
+            <span id="informationDistortionValue">4</span>
+        </div>
+        <div class="slider-group">
+            <label>Escalation Control:</label>
+            <input type="range" id="escalationControl" min="1" max="10" value="5">
+            <span id="escalationControlValue">5</span>
+        </div>
+        <button onclick="simulate()">Simulate Conflict Likelihood</button>
+        <h2>Results</h2>
+        <div id="result"></div>
+    </div>
+    <div class="explanation">
+        <p>This simulator is designed based on the 2024 geopolitical context. When the likelihood score exceeds 7, war is considered "likely." You can adjust various factors to see how power balance, regime stability, and nationalism affect decisions.</p>
+<div style="font-family: Arial, sans-serif; line-height: 1.6; margin-top: 20px;">
+    <h2>About This Simulator</h2>
+    <p>
+        This project is a geopolitical decision-making simulator inspired by the complex dynamics surrounding Taiwan Strait tensions in 2024. 
+        The simulator models how various factors, such as the balance of power, regime stability, and external pressures, may influence key decisions by 
+        political leaders, specifically within the context of China's leadership.
+    </p>
+    
+    <h3>Key Features</h3>
+    <ul style="margin-left: 20px;">
+        <li>
+            <strong>Interactive Controls:</strong> Five adjustable sliders represent critical factors in decision-making: 
+            <ul>
+                <li><strong>US-China Power Balance:</strong> Measures the perceived relative strength of the United States and China.</li>
+                <li><strong>Regime Stability:</strong> Reflects the internal stability of the Chinese government.</li>
+                <li><strong>Nationalism Pressure:</strong> Captures public and political sentiment pushing for aggressive actions.</li>
+                <li><strong>Information Distortion:</strong> Accounts for the impact of propaganda and misinformation within the regime.</li>
+                <li><strong>Escalation Control:</strong> Represents the leadership's ability to prevent conflict escalation.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Randomization Factors:</strong> Simulates unpredictable elements in decision-making through dynamic adjustment of paranoia 
+            and distortion levels, reflecting biases and incomplete information.
+        </li>
+        <li>
+            <strong>Outcome Calculation:</strong> Combines all adjusted factors into a final "Likelihood of War" score. This score predicts 
+            whether a leader would consider war, hesitate, or avoid conflict.
+        </li>
+    </ul>
+
+    <h3>How It Works</h3>
+    <p style="margin-left: 20px;">
+        When you adjust the sliders, each factor is recalculated using a unique algorithm. These inputs are modified by random 
+        factors (representing paranoia and distortion) to simulate subjective decision-making rather than objective reality. The likelihood 
+        score is then computed using weighted contributions from each factor:
+    </p>
+    <ul style="margin-left: 40px;">
+        <li><strong>30%:</strong> US-China Power Balance</li>
+        <li><strong>20%:</strong> Regime Stability</li>
+        <li><strong>30%:</strong> Nationalism Pressure</li>
+        <li><strong>10%:</strong> Information Distortion</li>
+        <li><strong>10%:</strong> Escalation Control</li>
+    </ul>
+    <p style="margin-left: 20px;">
+        The final score is clamped between 1 and 10 for clarity. Based on the score:
+    </p>
+    <ul style="margin-left: 40px;">
+        <li><strong>1-4:</strong> "Risk too high, no action."</li>
+        <li><strong>5-7:</strong> "Hesitation and continued observation."</li>
+        <li><strong>8-10:</strong> "High likelihood of military action."</li>
+    </ul>
+
+    <h3>Why This Matters</h3>
+    <p style="margin-left: 20px;">
+        This project aims to provide an educational and interactive way to understand the complexities of political decision-making under uncertainty. 
+        By visualizing how small changes in one factor (e.g., public pressure) can dramatically alter outcomes, users gain insights into 
+        the delicate balance of power and stability in global geopolitics.
+    </p>
+    
+    <h3>Visual Representation</h3>
+    <p style="margin-left: 20px;">
+        Below is a breakdown of how the sliders correspond to real-world factors:
+    </p>
+    <table style="border-collapse: collapse; margin-left: 20px; width: 90%;">
+        <thead>
+            <tr>
+                <th style="border: 1px solid #ddd; padding: 8px;">Slider</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Real-World Factor</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Impact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">US-China Power Balance</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Relative military and economic strength</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Directly affects confidence in military action</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Regime Stability</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Government's grip on power and internal threats</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Affects risk tolerance for bold decisions</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Nationalism Pressure</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Public demand for aggressive policies</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Increases likelihood of action</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Information Distortion</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Propaganda and leader's biases</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Can amplify miscalculated risks</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;">Escalation Control</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Ability to avoid unintended conflict</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">Reduces likelihood of escalation</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+ <div style="font-family: Arial, sans-serif; line-height: 1.6; margin-top: 20px; max-width: 800px; margin-left: auto; margin-right: auto;">
+    <h2>Understanding the Simulator</h2>
+
+    <p style="margin-bottom: 20px;">
+        This simulator explores geopolitical decision-making in the Taiwan Strait crisis based on the 2024 context. It visualizes how factors like power balance, regime stability, and nationalism affect a leader's decisions. 
+        Below is a summary of the sliders and their real-world meanings:
+    </p>
+
+    <table style="border-collapse: collapse; width: 100%; margin-bottom: 20px;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Slider</th>
+                <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Real-World Factor</th>
+                <th style="border: 1px solid #ddd; padding: 12px; text-align: left;">Impact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 12px;">US-China Power Balance</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Relative military and economic strength</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Affects confidence in taking military action</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 12px;">Regime Stability</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Government's internal control and threats</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Impacts risk tolerance for bold moves</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 12px;">Nationalism Pressure</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Public and political push for aggression</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Increases likelihood of military action</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 12px;">Information Distortion</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Impact of propaganda and misinformation</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">May skew judgment, leading to poor decisions</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 12px;">Escalation Control</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Ability to manage and prevent escalation</td>
+                <td style="border: 1px solid #ddd; padding: 12px;">Reduces risk of conflict spiraling out of control</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        This project models decision-making in a scenario where the risk of war is assessed based on key geopolitical factors. 
+        Each slider allows you to adjust a specific factor, which contributes to a final score predicting the "likelihood of war."
+    </p>
+
+    <h3>How It Works</h3>
+    <p>
+        The simulator uses the following steps to calculate the outcome:
+    </p>
+    <ol style="margin-left: 20px; margin-bottom: 20px;">
+        <li>
+            <strong>Input:</strong> Adjust sliders to modify values for power balance, regime stability, nationalism, information distortion, and escalation control.
+        </li>
+        <li>
+            <strong>Randomization:</strong> Introduces small, unpredictable variations in "paranoia" and "distortion," simulating subjective biases or misinterpretations.
+        </li>
+        <li>
+            <strong>Weighted Calculation:</strong> Combines the slider values into a single "Likelihood of War" score. Each factor is weighted as follows:
+            <ul>
+                <li><strong>30%</strong> from US-China Power Balance</li>
+                <li><strong>20%</strong> from Regime Stability</li>
+                <li><strong>30%</strong> from Nationalism Pressure</li>
+                <li><strong>10%</strong> from Information Distortion</li>
+                <li><strong>10%</strong> from Escalation Control</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Outcome:</strong> The score is presented on a scale of 1 to 10:
+            <ul>
+                <li><strong>1-4:</strong> Conflict is "unlikely." Risk too high.</li>
+                <li><strong>5-7:</strong> "Hesitation." Decision-making remains cautious.</li>
+                <li><strong>8-10:</strong> "High Likelihood of War." Aggressive action considered likely.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Purpose</h3>
+    <p>
+        This simulator highlights the complexity of geopolitical decision-making. By experimenting with different factors, you can explore how small changes in one area 
+        (e.g., regime stability) might lead to drastically different outcomes. It’s a tool to better understand the delicate balance of power, public pressure, and leadership biases in global politics.
+    </p>
+</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
